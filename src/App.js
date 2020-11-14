@@ -26,12 +26,12 @@ function App() {
       setTotalElements(0);
       return;
     }
-
-    if( value.length < 3 ){
+    // si no es un numero y no tiene más de 3 caracteres solicita agregar más caracteres
+    if(  isNaN(value) && value.length < 3 ){
       message.config({
         top: 120
       });
-      message.error('Debe buscar por más de 3 carácteres');
+      message.error('Debe buscar por más de 3 carácteres o solo números');
       return;
     }
 

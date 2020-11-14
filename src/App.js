@@ -16,7 +16,7 @@ function App() {
   const [totalElements, setTotalElements] = useState(0);
   const [searchValue, setSearchValue] = useState();
 
-  let baseURL = 'http://localhost/';
+  let baseURL = 'https://guarded-refuge-29710.herokuapp.com/';
 
   const onSearch = (value) => {
 
